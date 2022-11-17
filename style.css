@@ -17,10 +17,14 @@ button {
   border-style: solid;
   border-width: 3px;
   border-color: #49E45B;
-  border-radius: 200px;
   background-color: #49E45B;
   font-weight: 700;
+  color: white;
   transition: all 300ms ease;
+}
+
+button:hover{
+  filter:brightness(1.1);
 }
 
 figure{
@@ -45,29 +49,13 @@ section {
   transition: all 300ms ease;
 }
 
-.click {
-  cursor: pointer;
-  transition: all 300ms ease;
-}
-
-.click:hover {
-  transform: scale(1.1);
-}
-
-.click:active {
-  transform: scale(0.8);
+.alwaysWhite{
+  color: white;
 }
 
 .container {
   padding: 20px 0;
   width: 100%;
-}
-
-.row {
-  width: 100%;
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 12px;
 }
 
 .sectionSubtitle {
@@ -85,7 +73,7 @@ section {
 
 #landingPage {
   height: 100vh;
-  background-color: #EDE5E2;
+  background-image: url("assets/headerImg.png");
 }
 
 .color {
@@ -104,7 +92,7 @@ nav {
   padding: 0 100px;
   height: 80px;
   background-color: #f5f5f5;
-  box-shadow: 0px 5px 25px #ffffff99;
+  position:fixed;
 }
 
 #personalLogo {
@@ -154,6 +142,21 @@ nav {
   background-color:#ffffff00;
 }
 
+.secondNavLinkButton{
+  border-style:solid;
+  border-color: #49E45B;
+  background-color: rgba(255, 255, 255, 0);
+  padding: 8px 18px;
+  font-size: 16px;
+  color: #242424;
+  font-weight: 700;
+  transition: all 300ms ease;
+}
+
+.secondNavLinkButton:hover{
+  color: white;
+  background-color:#49E45B;
+}
 /*=====================Header=====================*/
 
 header {
@@ -170,7 +173,7 @@ header {
 
 .headerHalfContainer {
   margin-top: -10vh;
-  width: 60%;
+  width: 100%;
   height:75vh;
 }
 
@@ -182,6 +185,16 @@ header {
   margin-bottom: 30px;
 }
 
+.headerGradient {
+  display: flex;
+  flex-direction: column;
+  height: 40vh;
+  border-radius: 20px;
+  padding: 24px;
+  background-image: linear-gradient(to bottom, #49E45B, #49e45b00);
+  box-shadow: 0 20px 40px 0 #49e45b2e;
+  overflow-y: hidden ;
+}
 .headerParagraph {
 font-size: 20px;
 line-height: 1.2;
@@ -229,7 +242,7 @@ margin-bottom: 30px;
 
 .headerLinkButton:hover{
   color: #49E45B;
-  background-color:#ffffff00;
+  background-color:#ffffff;
 }
 
 /*=====================Shop=====================*/
@@ -257,7 +270,7 @@ margin-bottom: 30px;
   display: block;
   position: relative;
   width: 20%;
-  margin: 1%;
+  margin: 3%;
 }
 
 .shopSubTitle {
@@ -267,23 +280,17 @@ margin-bottom: 30px;
 
 .shopItem {
   max-height: 80vh;
+  height: 100%;
   overflow-y: hidden;
   margin: 10px 10px;
   background-color: #ffffff;
-  border-radius: 20px;
   box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.45);
-  padding: 0 0 0 0;
   transition: all 300ms ease;
-
-}
-
-.shopItem:hover {
-  transform: scale(1.10);
+  padding: 0 0 0 0;
 }
 
 .shopImg {
   max-width: 100%;
-  box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.45);
 }
 
 .shopButton{
@@ -292,27 +299,35 @@ margin-bottom: 30px;
   border-radius: 0;
   border-width: 0;
   font-size: 16px;
-}
-
-.shopButton:hover {
-  color: #49E45B;
-  background-color:#ffffff00;
+  text-align: left;
+  transition: all 300ms ease;
 }
 
 .shopDescription{
   line-height: 1.2;
   margin: 8px 8px 16px 8px;
-
+  transition: all 300ms ease;
 }
+
+.shopItem:hover {
+  transform: scale(1.10);
+}
+
+.shopButton:hover {
+  color: #49E45B;
+  background-color:#ffffff00;
+  border-bottom: 3px solid #49E45B;
+  transition: 1s;
+  left: 0;
+}
+
+
+
 /*=====================About=====================*/
 
 #about {
   height: 110vh;
-  background-image: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0.21),
-    #49e45b50
-  ), url("assets/2022-11-14_10.12.52.png");
+  background-image: url("assets/aboutImg.png");
 }
 
 .aboutParagraphContainer {
@@ -451,12 +466,55 @@ left: 0;
 width: 100%;
 }
 
-/*=====================Dark Theme - made by Yann Durandet =====================*/
+/*=====================Dark Theme=====================*/
 
-.dark-theme .headerTitle,
+.dark-theme .colorSwitch{
+  color: white;
+}
+.dark-theme nav,
+.dark-theme #shop,
+.dark-theme #gallery {
+  background-color: black;
+}
+.dark-theme nav{
+  box-shadow: 0px 5px 25px #00000099;
+}
+
+.dark-theme #landingPage,
+.dark-theme .shopItem {
+  background-color: #242424;
+}
+
+.dark-theme #personalLogo {
+  filter: none;
+}
+
+.dark-theme .navLink {
+  color: black;
+}
+
+.dark-theme .shopButton:hover{
+  box-shadow: none;
+  background-color: #ffffff;
+  color: #49E45B;
+}
+
+.dark-theme button:hover{
+  border-color: white;
+  background-color: white;
+  color: #49E45B;
+}
+.dark-theme .secondNavLinkButton:hover{
+  color: #242424;
+  background-color: #49E45B;
+}
+
+/* teeeeeeeeeeeeeeeeeeeeeeeeeeeeeest */
+
+.dark-theme .title,
 .dark-theme .sectionTitle,
-.dark-theme .sectionSubtitle,
-.dark-theme .navLinkAnchor,
+.dark-theme .sectionStitle,
+.dark-theme .navLinktext,
 .dark-theme .fa-adjust,
 .dark-theme .headerParagraph,
 .dark-theme .sectionSubtitle,
@@ -464,8 +522,8 @@ width: 100%;
   color: white;
 }
 .dark-theme nav,
-.dark-theme #shop,
-.dark-theme #gallery {
+.dark-theme #about,
+.dark-theme #projects{
   background-color: black;
 }
 .dark-theme section {
@@ -478,11 +536,4 @@ width: 100%;
 
 .dark-theme .socialLink {
   color: black;
-}
-
-/* augh */
-
-.augh{
-  max-width:50px;
-  max-height: 50px;
 }

@@ -19,20 +19,27 @@
             </figure>
             <ul class="navList">
                 <li class="navLink">
-                    <a href="#about" class=" navLinkText linkHoverEffect linkHoverEffectBlack">About</a>
+                    <a href="#about" class=" navLinkText linkHoverEffect linkHoverEffectBlack colorSwitch">About</a>
                 </li>
                 <li class="navLink">
-                    <a href="#gallery" class=" navLinkText linkHoverEffect linkHoverEffectBlack">Gallery</a>
+                    <a href="#gallery" class=" navLinkText linkHoverEffect linkHoverEffectBlack colorSwitch">Gallery</a>
                 </li>
                 <li class="navLink">
                     <a href="#shop">
-                        <button class="navLinkButton">
+                        <button class="navLinkButton colorSwitch">
                             Products & Services
                         </button>
                     </a>
                 </li>
+                <li class="navLink">
+                    <a href="mailto:durandet.yann@gmail.com">
+                        <button class="secondNavLinkButton colorSwitch">
+                            Contact
+                        </button>
+                    </a>
+                </li>
                 <li class="navLink click" onclick="toggleContrast()">
-                    <a href="#" class=" navLinkText linkHoverEffect linkHoverEffectBlack">
+                    <a href="#" class=" navLinkText linkHoverEffect linkHoverEffectBlack colorSwitch">
                         <i class="fas fa-adjust"></i>
                     </a>
                 </li>
@@ -42,39 +49,25 @@
             <div class="headerContainer">
                 <div class="headerHalfContainer headerLeftContainer">
                     <div class="headerMainTitle">
-                        <h1 class="headerTitle">
+                        <h1 class="headerTitle colorSwitch">
                             Yann
                         </h1>
                         <h1 class="headerTitle color">
                             Designs
                         </h1>
                     </div>
-                    <p class="headerParagraph">
-                        Are you looking to Improve your builds in Minecraft? You're at the right place ! I offer
-                        One-on-One coaching sessions, An E-Book about various techniques I learned throughout my 12
-                        years of playing the game, personal-prestations, or simply download one of my works for a small
-                        fee!
-                    </p>
-                    <a href="#shop">
-                        <button class="headerLinkButton">
-                            <i class="fa-solid fa-angles-down"></i>
-                            &nbsp Products & Services &nbsp
-                            <i class="fa-solid fa-angles-down"></i>
-                        </button>
-                    </a>
-                </div>
-                <div class="headerHalfContainer headerRightContainer">
-                    <p class="headerEBookTitle">
-                        Buy my E-Book !
-                    </p>
-                    <div class="headerImgHolder">
-                        <figure class="headerImgItem">
-                            <img src="assets/eBookPlaceHolder.jpg" class="headerImg" alt="E-Book">
-                        </figure>
+                    <div class="headerGradient">
+                        <p class="headerParagraph colorSwitch">
+                            Are you looking to Improve your building skills in Minecraft? You're at the right place ! I offer
+                            One-on-One coaching sessions, An E-Book about various techniques I learned throughout my 12
+                            years of playing the game, personal-prestations, or simply download one of my works for a small
+                            fee!
+                        </p>
                         <a href="#shop">
-                            <button class="headerLinkButton headerEBookButton">
-                                <i class="fa-solid fa-angles-right"></i>
-                                Only 7$99 !
+                            <button class="headerLinkButton colorSwitch">
+                                <i class="fa-solid fa-angles-down"></i>
+                                &nbsp Products & Services &nbsp
+                                <i class="fa-solid fa-angles-down"></i>
                             </button>
                         </a>
                     </div>
@@ -82,111 +75,67 @@
             </div>
         </header>
     </section>
-
-
     <section id="shop">
         <div class="container">
-            <h1 class="shopTitle">
+            <h1 class="shopTitle colorSwitch">
                 My Online <span class="color">Shop</span>
             </h1>
             <div class="shopRow">
                 <ul class="shopLayout">
                     <li class="shopItemHolder">
-                        <h2 class="shopSubTitle">
-                            E-Book
-                        </h2>
-                        <div class="shopItem">
-                            <figure>
-                                <img src="assets/productPlaceHolder1.jpg" class="shopImg" alt="">
-                            </figure>
-                            <a href="">
-                                <button class="shopButton">
-                                    <i class="fa-solid fa-angles-right"></i> 7$99
-                                </button>
-                            </a>
-                            <p class="shopDescription">
-                                In this book you will find most of the knowledge which I acquired through the years on how to make your builds stand out.
-                            </p>
-                        </div>
-                    </li>
-
-
-
-
-
-
-
-
-
-
-
-
-                    <li class="shopItemHolder">
-                        <h2 class="shopSubTitle">
+                        <h2 class="shopSubTitle colorSwitch">
                             1:1 Coaching
                         </h2>
                         <div class="shopItem">
                             <figure>
-                                <img src="assets/productPlaceHolder2.jpg" class="shopImg" alt="">
+                                <img src="assets/shop1.png" class="shopImg" alt="">
                             </figure>
-                            <a href="">
-                                <button class="shopButton">
-                                    <i class="fa-solid fa-angles-right"></i> View Prices
+                            <a href="prices.html">
+                                <button class="shopButton colorSwitch">
+                                    <span class="shopButtonText"><i class="fa-solid fa-angles-right"></i> View Prices</span>
                                 </button>
                             </a>
-                            <p class="shopDescription">
+                            <p class="shopDescription colorSwitch">
                                 Do you struggle to improve your builds ? For a reasonnable price, I can offer you private coaching, directly on my Private Creative Realm. 
                             </p>
                         </div>
-                    </li>                    <li class="shopItemHolder">
-                        <h2 class="shopSubTitle">
+                    </li>                    
+                    <li class="shopItemHolder">
+                        <h2 class="shopSubTitle colorSwitch">
                             Building Service
                         </h2>
                         <div class="shopItem">
                             <figure>
-                                <img src="assets/productPlaceHolder3.jpg" class="shopImg" alt="">
+                                <img src="assets/shop2.png" class="shopImg" alt="">
                             </figure>
                             <a href="https://www.fiverr.com/gigs/minecraft-builder">
-                                <button class="shopButton">
-                                    <i class="fa-solid fa-angles-right"></i> View on Fiverr <i class="fa-solid fa-up-right-from-square"></i>
+                                <button class="shopButton colorSwitch">
+                                    <span class="shopButtonText"><i class="fa-solid fa-angles-right"></i> View on Fiverr <i class="fa-solid fa-up-right-from-square"></i></span>
                                 </button>
                             </a>
-                            <p class="shopDescription">
+                            <p class="shopDescription colorSwitch">
                                 I will build professionally your very Ideas in Minecraft - On the version of your choice.    
                             </p>
                         </div>
-                    </li>                    <li class="shopItemHolder">
-                        <h2 class="shopSubTitle">
+                    </li>
+                    <li class="shopItemHolder">
+                        <h2 class="shopSubTitle colorSwitch">
                             Worlds
                         </h2>
                         <div class="shopItem">
                             <figure>
-                                <img src="assets/productPlaceHolder4.jpg" class="shopImg" alt="">
+                                <img src="assets/shop3.png" class="shopImg" alt="">
                             </figure>
                             <a href="">
-                                <button class="shopButton">
-                                    <i class="fa-solid fa-angles-right"></i> Browse
+                                <button class="shopButton colorSwitch">
+                                    <span class="shopButtonText"><i class="fa-solid fa-angles-right"></i> Browse</span>
                                 </button>
                             </a>
-                            <p class="shopDescription">
+                            <p class="shopDescription colorSwitch">
                                 Browse & Experience my creations, all available to download for a very small fee.
                             </p>
                         </div>
                     </li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                 </ul>
             </div>
         </div>
@@ -194,10 +143,10 @@
     <section id="about">
         <div class="aboutContainer">
         <h1 class="sectionTitle">
-            Here' a bit more <span class="color">about me</span>.
+            <span class="alwaysWhite">Here's a bit more </span><span class="color">about me</span><span class="alwaysWhite">.</span>
         </h1>
         <div class="aboutParagraphContainer">
-            <p class="aboutParagraph">
+            <p class="aboutParagraph colorSwitch">
                 Hi, I'm Yann, I have been playing Minecraft ever since version beta 1.8, and I always had a strong
                 passion for building. In fact, It is mostly the only creative thing I am able to do, as I am awful in
                 Drawing, Painting etc. Anyway, I love to express things through this game.
@@ -209,7 +158,7 @@
     <section id="gallery">
         <div class="container">
             <div class="galleryRow">
-                <h1 class="sectionTitle">
+                <h1 class="sectionTitle colorSwitch">
                     This is my work <span class="color">gallery</span>
                 </h1>
                 <ul class="galleryLayout">
@@ -223,13 +172,13 @@
                         <img src="assets/gallery2.png" class="galleryImg" alt="">
                     </li>
                 </ul>
-                <h3 class="sectionSubtitle">
+                <h3 class="sectionSubtitle colorSwitch">
                     You can always explore more on my <a href="https://instagram.com/yann.designs" target="_blank"
-                        class="linkHoverEffect linkHoverEffectColor"><b class="color">Instagram <i class="fa-solid fa-up-right-from-square"></i></b></a>
+                        class="linkHoverEffect linkHoverEffectColor"><b class="color">Instagram</b></a>
                 </h3>
-                <h3 class="sectionSubtitle">
+                <h3 class="sectionSubtitle colorSwitch">
                     And follow my tutorials on <a href="https://www.youtube.com/channel/UCSiySRUGA1X9jnYcbmJttxw" target="_blank"
-                        class="linkHoverEffect linkHoverEffectColor"><b class="color">Youtube <i class="fa-solid fa-up-right-from-square"></i></b></a>
+                        class="linkHoverEffect linkHoverEffectColor"><b class="color">Youtube</b></a>
                 </h3>
             </div>
         </div>
@@ -237,7 +186,7 @@
     <section>
         <footer>
             <div class="container">
-                <div class="row footerRow">
+                <div class="footerRow">
                     <a href="#" class="footerAnchor">
                         <figure class="footerLogo">
                             <img src="assets/ydLogoWhite.png" class="footerLogoImg" alt="LOGO YD">
@@ -249,22 +198,22 @@
                     </a>
                     <div class="footerSocialList">
                         <a href="https://yanndurandet.github.io/Yann/" target="_blank"
-                            class=" footerSocialLink linkHoverEffect linkHoverEffectWhite">Portfolio <i class="fa-solid fa-up-right-from-square"></i></a>
+                            class=" footerSocialLink linkHoverEffect linkHoverEffectWhite">Portfolio</a>
                         <a href="https://www.youtube.com/channel/UCSiySRUGA1X9jnYcbmJttxw" target="_blank"
-                            class=" footerSocialLink linkHoverEffect linkHoverEffectWhite">Youtube <i class="fa-solid fa-up-right-from-square"></i></a>
+                            class=" footerSocialLink linkHoverEffect linkHoverEffectWhite">Youtube</a>
                         <a href="https://instagram.com/yann.designs" target="_blank"
-                            class=" footerSocialLink linkHoverEffect linkHoverEffectWhite">Instagram <i class="fa-solid fa-up-right-from-square"></i></a>
+                            class=" footerSocialLink linkHoverEffect linkHoverEffectWhite">Instagram</a>
                         <a href="https://github.com/YannDurandet" target="_blank"
-                            class=" footerSocialLink linkHoverEffect linkHoverEffectWhite">GitHub <i class="fa-solid fa-up-right-from-square"></i></a>
+                            class=" footerSocialLink linkHoverEffect linkHoverEffectWhite">GitHub</a>
                         <a href="https://www.linkedin.com/in/yann-durandet-16472a252/" target="_blank"
-                            class="  footerSocialLink linkHoverEffect linkHoverEffectWhite">LinkedIn <i class="fa-solid fa-up-right-from-square"></i></a>
+                            class="  footerSocialLink linkHoverEffect linkHoverEffectWhite">LinkedIn</a>
                     </div>
                     <div class="footerCopyright">
-                        Copyright &copy; 2022 Yann Durandet</div>
+                        Copyright &copy; 2022 Yann Durandet
+                    </div>
                 </div>
             </div>
         </footer>
     </section>
 </body>
-
 </html>
