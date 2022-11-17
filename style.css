@@ -14,9 +14,7 @@ a {
 
 button {
   cursor: pointer;
-  border-style: solid;
-  border-width: 3px;
-  border-color: #49E45B;
+  border: 3px solid #49E45B;
   background-color: #49E45B;
   font-weight: 700;
   color: white;
@@ -24,6 +22,8 @@ button {
 }
 
 button:hover{
+  background-color:#49e45b12;
+  color: #49E45B;
   filter:brightness(1.1);
 }
 
@@ -49,13 +49,25 @@ section {
   transition: all 300ms ease;
 }
 
-.alwaysWhite{
-  color: white;
-}
-
 .container {
   padding: 20px 0;
   width: 100%;
+}
+
+.color {
+  color: #49E45B;
+}
+
+.paragraph{
+  display: flex;
+  height: 100%;
+  padding: 24px;
+  background-color:#49e45b95;
+  font-size: 24px;
+  line-height: 1.2;
+  max-width: 600px;
+  margin-bottom: 30px;
+  text-align: justify;
 }
 
 .sectionSubtitle {
@@ -68,17 +80,15 @@ section {
   text-align: center;
   font-size: 48px;
   margin-bottom: 0px;
-  padding-top: 40px;
+  padding-top: 100px;
 }
 
 #landingPage {
   height: 100vh;
-  background-image: url("assets/headerImg.png");
+  background-image: linear-gradient(to right, #ffffff35, #ffffff00), url("assets/headerImg.png");
 }
 
-.color {
-  color: #49E45B;
-}
+
 
 /*=====================NAV=====================*/
 
@@ -91,9 +101,10 @@ nav {
   margin: 0 auto;
   padding: 0 100px;
   height: 80px;
-  background-color: #f5f5f5;
+  background-color: #ffffff;
   position:fixed;
   z-index:1;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.181);
 }
 
 #personalLogo {
@@ -117,47 +128,28 @@ nav {
   font-weight: 700;
 }
 
-.navLinkColor {
-  font-size: 16px;
-  color: red;
-  font-weight: 700;
-}
-
 .fa-adjust {
   font-size: 20px;
 }
 
 .navLinkButton {
-  border-style:solid;
-  border-color: #49E45B;
-  background-color: #49E45B;
   padding: 8px 18px;
   font-size: 16px;
   color: #242424;
-  font-weight: 700;
-  transition: all 300ms ease;
-}
-
-.navLinkButton:hover{
-  color: #49E45B;
-  background-color:#ffffff00;
 }
 
 .secondNavLinkButton{
-  border-style:solid;
-  border-color: #49E45B;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: #ffffff00;
   padding: 8px 18px;
   font-size: 16px;
   color: #242424;
-  font-weight: 700;
-  transition: all 300ms ease;
 }
 
 .secondNavLinkButton:hover{
   color: white;
   background-color:#49E45B;
 }
+
 /*=====================Header=====================*/
 
 header {
@@ -166,16 +158,7 @@ header {
   align-items: center;
   height: 110vh;
   margin: 0 auto;
-}
-
-.headerContainer{
-  display: flex;
-}
-
-.headerHalfContainer {
-  margin-top: -10vh;
-  width: 100%;
-  height:75vh;
+  height:110vh;
 }
 
 .headerMainTitle{
@@ -186,71 +169,18 @@ header {
   margin-bottom: 30px;
 }
 
-.headerGradient {
-  display: flex;
-  flex-direction: column;
-  height: 40vh;
-  border-radius: 20px;
-  padding: 24px;
-  background-image: linear-gradient(to bottom, #49E45B, #49e45b00);
-  box-shadow: 0 20px 40px 0 #49e45b2e;
-  overflow-y: hidden ;
-}
-.headerParagraph {
-font-size: 20px;
-line-height: 1.2;
-max-width: 450px;
-margin-bottom: 30px;
-}
-
 .headerLinkButton{
   padding: 16px 32px;
   font-size: 24px;
-}
-
-.headerRightContainer{
-  display: flex;
-  flex-direction: column;
-  padding-left: 30px;
-}
-
-.headerEBookTitle{
-  font-size: 24px;
-  font-weight: 700;
-  margin-bottom: 8px;
-}
-
-.headerImgHolder {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  width: 70%;
-  overflow-y: hidden;
-}
-
-.headerImgItem {
-  margin-bottom: 8px;
-}
-
-.headerImg {
-  max-width: 70%;
-}
-
-.headerEBookButton{
-  padding: 8px 18px;
-  font-size: 16px;
-}
-
-.headerLinkButton:hover{
-  color: #49E45B;
-  background-color:#ffffff;
+  background-color: #49e45b95;
 }
 
 /*=====================Shop=====================*/
 
 #shop {
+  padding-top: 40px;
   padding-bottom: 40px;
-  background-color:#ffffff;
+  background-color:#EDE5E2;
   height: 100vh;
 }
 
@@ -275,12 +205,11 @@ margin-bottom: 30px;
 }
 
 .shopSubTitle {
-  margin-left: 24px;
+  margin-left: 12px;
   margin-bottom: 32px;
 }
 
 .shopItem {
-  max-height: 80vh;
   height: 100%;
   overflow-y: hidden;
   margin: 10px 10px;
@@ -316,38 +245,21 @@ margin-bottom: 30px;
 
 .shopButton:hover {
   color: #49E45B;
-  background-color:#ffffff00;
-  border-bottom: 3px solid #49E45B;
-  transition: 1s;
-  left: 0;
+  background-color:#49e45b28;
 }
-
-
 
 /*=====================About=====================*/
 
 #about {
   height: 110vh;
+  background-color:#EDE5E2;
   background-image: url("assets/aboutImg.png");
 }
 
-.aboutParagraphContainer {
-  display: flex;
-  height: 90vh;
-  margin-left: 10%;
-  margin-top: 5%;
-  max-width: 30%;
-  border-radius: 20px;
-  padding: 24px;
-  background-image: linear-gradient(to bottom, #49E45B, #49e45b00);
-  box-shadow: 0 20px 40px 0 #49e45b2e;
-}
-
 .aboutParagraph {
-  font-size: 24px;
-  text-align: justify;
+  margin-top: 5%;
+  margin-left: 5%;
 }
-
 
 /*=====================Gallery=====================*/
 
@@ -385,7 +297,6 @@ footer {
   background-color: #131313;
   display: flex;
   padding: 0 0;
-  height: 600vh;
 }
 
 .footerRow {
@@ -429,6 +340,10 @@ footer {
   opacity: 1;
 }
 
+/*=====================Worlds=====================*/
+#worlds{
+  height: 110vh;
+}
 /*=====================Link Hover Effect - made by Yann Durandet=====================*/
 
 .linkHoverEffect {
@@ -470,6 +385,14 @@ width: 100%;
 
 /*=====================Dark Theme=====================*/
 
+.alwaysWhite{
+  color: white;
+}
+
+.dark-theme #landingPage{
+  background-image: linear-gradient(to right, #00000071, #0000001f), url("assets/headerImg.png");
+}
+
 .dark-theme .colorSwitch{
   color: white;
 }
@@ -478,11 +401,10 @@ width: 100%;
 .dark-theme #gallery {
   background-color: black;
 }
-.dark-theme nav{
-  box-shadow: 0px 5px 25px #00000099;
-}
 
 .dark-theme #landingPage,
+.dark-theme #about,
+.dark-theme #worlds,
 .dark-theme .shopItem {
   background-color: #242424;
 }
@@ -503,39 +425,11 @@ width: 100%;
 
 .dark-theme button:hover{
   border-color: white;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.581);
   color: #49E45B;
 }
 .dark-theme .secondNavLinkButton:hover{
   color: #242424;
   background-color: #49E45B;
-}
-
-/* teeeeeeeeeeeeeeeeeeeeeeeeeeeeeest */
-
-.dark-theme .title,
-.dark-theme .sectionTitle,
-.dark-theme .sectionStitle,
-.dark-theme .navLinktext,
-.dark-theme .fa-adjust,
-.dark-theme .headerParagraph,
-.dark-theme .sectionSubtitle,
-.dark-theme .aboutParagraph {
-  color: white;
-}
-.dark-theme nav,
-.dark-theme #about,
-.dark-theme #projects{
-  background-color: black;
-}
-.dark-theme section {
-  background-color: #242424;
-}
-
-.dark-theme #personalLogo {
-  filter: none;
-}
-
-.dark-theme .socialLink {
-  color: black;
+  border: 3px solid #49E45B
 }

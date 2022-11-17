@@ -1,3 +1,4 @@
+/*Dark-Theme*/
 let contrastToggle = false;
 function toggleContrast() {
   contrastToggle = !contrastToggle;
