@@ -158,7 +158,6 @@ header {
   align-items: center;
   height: 110vh;
   margin: 0 auto;
-  height:110vh;
 }
 
 .headerMainTitle{
@@ -228,7 +227,7 @@ header {
   padding: 12px 12px;
   border-radius: 0;
   border-width: 0;
-  font-size: 16px;
+  font-size: 14px;
   text-align: left;
   transition: all 300ms ease;
 }
@@ -396,7 +395,6 @@ width: 100%;
 .dark-theme .colorSwitch{
   color: white;
 }
-.dark-theme nav,
 .dark-theme #shop,
 .dark-theme #gallery {
   background-color: black;
@@ -405,6 +403,7 @@ width: 100%;
 .dark-theme #landingPage,
 .dark-theme #about,
 .dark-theme #worlds,
+.dark-theme nav,
 .dark-theme .shopItem {
   background-color: #242424;
 }
@@ -432,4 +431,90 @@ width: 100%;
   color: #242424;
   background-color: #49E45B;
   border: 3px solid #49E45B
+}
+
+@media (max-width: 768px) {
+  /*=====HEADER=====*/
+  nav{
+    padding-left: 8px;
+    align-items: center;
+  }
+  header {
+    height: 85vh;
+  }
+  .headerMainTitle{
+    margin-left: 20px;
+  }
+  .headerLinkButton{
+    display: none;
+  }
+  .paragraph{
+    max-width: 100%;
+  }
+  /*=====SHOP=====*/
+  #shop {
+    height: 350vh;
+  }
+  .shopLayout{
+    flex-direction: column;
+  }
+  .shopSubTitle{
+    margin: 0 auto;
+  }
+  .shopItemHolder {
+    display: flex;
+    flex-direction: column;
+    position: center;
+    width: 100%;
+  }
+  .shopItem{
+    max-width: 70%;
+    margin: 48px auto;
+  }
+  .shopDescription{
+    font-size: 24px;
+  }
+  .shopButton{
+    font-size: 28px;
+  }
+  .shopImg{
+    width: 100%;
+  }
+  /*=====ABOUT=====*/
+  #about {
+    height: 95vh;
+    background-color:#EDE5E2;
+    background-image: url("assets/aboutResponsiveImg.png");
+  }
+  .aboutParagraph{
+    max-width: 100%;
+  }
+  /*=====GALLERY=====*/
+  .galleryLayout{
+    display: flex;
+    flex-direction: column;
+  }
+  .galleryItem{
+    width: 100%;
+    margin: 12px 0 0 0;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .responsiveMilk{
+    display: none;
+  }
+  #shop {
+    height: 300vh;
+  }
+  .footerSocialList{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .footerSocialLink{
+    margin-bottom: 24px;
+  }
 }
