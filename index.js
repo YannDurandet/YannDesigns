@@ -8,3 +8,5 @@ function toggleContrast() {
     document.body.classList.remove("dark-theme")
   }
 }
+
+let playSound = () => new Audio("assets/hoversfx.mp3").play()
