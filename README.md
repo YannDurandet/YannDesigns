@@ -1,7 +1,14 @@
 # Yann Designs Website
 
+***
 
 Yann Design is an HTML & CSS Project from my school, a simple front-shop website on of my passion topics, Minecraft Building.
+
+- ## Website Link (GitHub Pages):
+	- https://yanndurandet.github.io/YannDesigns/
+
+- ## Website GitHub Repository :
+	- https://github.com/YannDurandet/YannDesigns
 
 - ## Follow my work on :
 	- <a href="https://www.youtube.com/channel/UCSiySRUGA1X9jnYcbmJttxw">YouTube</a>
@@ -13,6 +20,8 @@ Yann Design is an HTML & CSS Project from my school, a simple front-shop website
 >Due to a thunderstorm corrupting most of my computer's files last September, I had lost all of my Minecraft creations, and could only use builds from my private realm which were not that impressive
 
 > As such, some of the builds used as illustration on the website were not my creations, and all credits may be found [Credits](#credits).
+
+***
 
 - # Change Log
 	- ## Nov 9th, 2022
@@ -77,11 +86,13 @@ Yann Design is an HTML & CSS Project from my school, a simple front-shop website
 				- added responsiveness
 				- **Completed**
 
+***
 
 - # Known Issues
 	- LinkHoverEffect nor working whilst dark-theme is in use in Nav
 	- Odd margin on the right of the screen in @media 768px & @media 480px
 
+***
 
 - # Credits
 	- shop1.png
