@@ -338,7 +338,7 @@ footer {
 #worlds{
   padding-top: 10vh;
 }
-/*=====================Link Hover Effect - made by Yann Durandet=====================*/
+/*=====================Link Hover Effect=====================*/
 
 .linkHoverEffect {
   position: relative;
@@ -365,11 +365,6 @@ background-color: #242424;
 .linkHoverEffectColor:after{
 background-color:#49E45B;
 height: 4px;
-}
-
-.linkHoverEffectColorSmall:after{
-background-color:#49E45B;
-height: 2px;
 }
 
 .linkHoverEffect:hover:after {
@@ -423,6 +418,8 @@ width: 100%;
   background-color: #49E45B;
   border: 3px solid #49E45B
 }
+
+/*=====================Responsive=====================*/
 
 @media (max-width: 768px) {
 
