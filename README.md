@@ -89,8 +89,7 @@ Yann Design is an HTML & CSS Project from my school, a simple front-shop website
 ***
 
 - # Known Issues
-	- LinkHoverEffect nor working whilst dark-theme is in use in Nav
-	- Odd margin on the right of the screen in @media 768px & @media 480px
+	- LinkHoverEffect not working whilst dark-theme is in use in Nav
 
 ***
 
@@ -107,3 +106,10 @@ Yann Design is an HTML & CSS Project from my school, a simple front-shop website
 		- The Build is mine but was heavily inspired by **MassivePeck**
 			- <a href="https://www.youtube.com/channel/UCnn2d2fEjde5k8M8kzI3QbA">YouTube</a>
 			- <a href="https://www.instagram.com/massivespeck/">Instagram</a>
+	- mansion.png
+		- This Mansion was build by **Grian**
+			- <a href="https://www.youtube.com/@Grian"></a>
+			- <a href="https://www.instagram.com/grianmc/"></a>
+	- alienJungle.png , nightCity.png , warrington.png
+		- All builds from the **Super Sama World** building teams
+			- <a href="https://www.supersamaworld.com/">Website</a>

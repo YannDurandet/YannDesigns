@@ -179,7 +179,6 @@ header {
   padding-top: 40px;
   padding-bottom: 40px;
   background-color:#EDE5E2;
-  height: 100vh;
 }
 
 .shopTitle {
@@ -198,8 +197,8 @@ header {
 .shopItemHolder {
   display: block;
   position: relative;
-  width: 20%;
-  margin: 3%;
+  width: 19%;
+  margin: 2%;
 }
 
 .shopSubTitle {
@@ -218,6 +217,7 @@ header {
 
 .shopImg {
   max-width: 100%;
+  height: 100%;
 }
 
 .shopButton{
@@ -246,9 +246,9 @@ header {
 /*=====================About=====================*/
 
 #about {
-  height: 110vh;
   background-color:#EDE5E2;
   background-image: url("assets/aboutImg.png");
+  height: 100vh;
 }
 
 .aboutParagraph {
@@ -336,7 +336,7 @@ footer {
 
 /*=====================Worlds=====================*/
 #worlds{
-  height: 110vh;
+  padding-top: 10vh;
 }
 /*=====================Link Hover Effect - made by Yann Durandet=====================*/
 
@@ -391,13 +391,13 @@ width: 100%;
   color: white;
 }
 .dark-theme #shop,
+.dark-theme #worlds,
 .dark-theme #gallery {
   background-color: black;
 }
 
 .dark-theme #landingPage,
 .dark-theme #about,
-.dark-theme #worlds,
 .dark-theme nav,
 .dark-theme .shopItem {
   background-color: #242424;
@@ -453,10 +453,6 @@ width: 100%;
 
   /*=====SHOP=====*/
 
-  #shop {
-    height: 350vh;
-  }
-
   .shopLayout{
     flex-direction: column;
   }
@@ -469,7 +465,8 @@ width: 100%;
     display: flex;
     flex-direction: column;
     position: center;
-    width: 100%;
+    width: 95%;
+    margin-right: 0;
   }
 
   .shopItem{
@@ -492,13 +489,15 @@ width: 100%;
   /*=====ABOUT=====*/
 
   #about {
-    height: 95vh;
+    height: 75vh;
     background-color:#EDE5E2;
     background-image: url("assets/aboutResponsiveImg.png");
   }
 
   .aboutParagraph{
     max-width: 100%;
+    margin: 0;
+    background-color: #49e45b3a;
   }
 
   /*=====GALLERY=====*/
@@ -519,10 +518,6 @@ width: 100%;
 
   .responsiveLinks{
     display: none;
-  }
-
-  #shop {
-    height: 300vh;
   }
   
   .footerSocialList{
