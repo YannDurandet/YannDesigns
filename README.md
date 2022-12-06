@@ -90,6 +90,7 @@ Yann Design is an HTML & CSS Project from my school, a simple front-shop website
 
 - # Known Issues
 	- LinkHoverEffect not working whilst dark-theme is in use in Nav
+	- Dark Theme doesn't stay on whilst switching pages
 
 ***
 
@@ -108,8 +109,8 @@ Yann Design is an HTML & CSS Project from my school, a simple front-shop website
 			- <a href="https://www.instagram.com/massivespeck/">Instagram</a>
 	- mansion.png
 		- This Mansion was build by **Grian**
-			- <a href="https://www.youtube.com/@Grian"></a>
-			- <a href="https://www.instagram.com/grianmc/"></a>
+			- <a href="https://www.youtube.com/@Grian">Youtube</a>
+			- <a href="https://www.instagram.com/grianmc/">Instagram</a>
 	- alienJungle.png , nightCity.png , warrington.png
 		- All builds from the **Super Sama World** building teams
 			- <a href="https://www.supersamaworld.com/">Website</a>
