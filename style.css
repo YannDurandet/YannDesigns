@@ -84,6 +84,7 @@ section {
 
 #landingPage {
   height: 100vh;
+  background-attachment:fixed;
   background-image: linear-gradient(to right, #ffffff35, #ffffff00), url("assets/headerImg.png");
 }
 
@@ -247,6 +248,7 @@ header {
 
 #about {
   background-color:#EDE5E2;
+  background-attachment:fixed;
   background-image: url("assets/aboutImg.png");
   height: 100vh;
 }
